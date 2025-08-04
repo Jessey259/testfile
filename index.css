@@ -1,0 +1,274 @@
+:root {
+  --accent-color: #f5a841;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #f8f1e9; 
+  color: #1a1a1a; 
+}
+
+/* General Section Styling */
+section .container,
+section .container-lg {
+  padding: 2rem 1rem;
+}
+
+section:not(#hero) {
+  text-align: center;
+}
+
+section:nth-child(2n) {
+  background-color: #e8edff; 
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f1e9; 
+}
+
+section.hero {
+  padding-top: 80px;
+}
+
+section.hero h1 {
+  font-size: 2rem;
+}
+
+section.hero p {
+  font-size: 0.9rem;
+}
+
+section.hero .img-fluid {
+  max-width: 180px;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+/*About*/
+section.about p {
+  font-size: 0.9rem;
+}
+
+section.about h2 {
+  font-size: 1.75rem;
+}
+
+
+/* Services Section */
+section.services .card {
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+section.services .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+section.services .card-body {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+section.services .card-title {
+  min-height: 3rem;
+}
+
+section.services .card-text {
+  min-height: 6rem;
+}
+
+section.services h2 {
+  font-size: 1.75rem;
+}
+
+section.services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Contact*/
+section.contact .row {
+  align-items: center;
+}
+
+section.contact .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section.contact .social-media a {
+  font-size: 1.5rem;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+section.contact .social-media a:hover {
+  color: var(--accent-color);
+}
+
+section.contact a {
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  background-color: #f8f1e9; 
+}
+
+
+
+
+/* Existing Media Queries (partial, with background adjustments) */
+@media screen and (min-width: 576px) {
+  section.hero h1 {
+    font-size: 2.5rem;
+  }
+
+  section.hero p {
+    font-size: 1rem;
+  }
+
+  section.hero .img-fluid {
+    max-width: 250px;
+  }
+
+  section.services h2,
+  section.about h2 {
+    font-size: 2rem;
+  }
+
+  section.services .card {
+    max-width: 22rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .container,
+  section .container-lg {
+    padding: 3rem 2rem;
+  }
+
+  section.hero h1 {
+    font-size: 3rem;
+  }
+
+  section.hero .img-fluid {
+    max-width: 350px;
+  }
+
+  section.services .card {
+    max-width: 22rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section .container,
+  section .container-lg {
+    padding: 4rem;
+  }
+
+  nav .container-lg {
+    padding: 0 4rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 0 1rem;
+  }
+
+  section.hero {
+    padding-top: 100px;
+  }
+
+  section.hero h1 {
+    font-size: 3.5rem;
+  }
+
+  section.hero .img-fluid {
+    max-width: 400px;
+  }
+
+  section.about .container {
+    max-width: 75%;
+  }
+
+  .btn-outline-dark.d-lg-block {
+    margin-top: 0;
+  }
+}
+
+/* Rest of the CSS remains unchanged (navbar links, contact, buttons, etc.) */
+.navbar-nav .nav-link {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent-color);
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.btn-outline-dark.d-lg-block {
+  margin-top: 1rem;
+}
+
+section .card,
+.btn-outline-dark {
+  border: 2px solid #000;
+  box-shadow: 3px 3px #000;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  box-shadow: 3px 3px var(--accent-color);
+  transform: translateY(-2px);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  background-color: #f8f1e9; 
+}
